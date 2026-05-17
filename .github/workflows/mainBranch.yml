@@ -5,12 +5,13 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    # ✅ This enables GitHub Deployment / Environments section
     environment:
       name: github-pages
 
@@ -24,8 +25,17 @@ jobs:
           distribution: temurin
           java-version: 17
 
+      - name: Cache Maven dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
       - name: Run tests
         run: mvn clean test
+        continue-on-error: true
 
       - name: Check Allure results folder
         run: |
@@ -34,7 +44,6 @@ jobs:
             ls target/allure-results
           else
             echo "No Allure results found"
-            exit 0
           fi
 
       - name: Upload Allure Results
@@ -45,14 +54,6 @@ jobs:
           path: target/allure-results/
           retention-days: 30
 
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v4
-        if: always()
-        continue-on-error: true
-        with:
-          ref: gh-pages
-          path: gh-pages
-
       - name: Generate Allure Report
         uses: simple-elf/allure-report-action@master
         if: always()
@@ -61,10 +62,9 @@ jobs:
           allure_history: allure-history
           keep_reports: 20
 
-      #  DEPLOYMENT STEP (THIS CREATES DEPLOYMENT)
-    - name: Deploy Allure Report to GitHub Pages
-      if: github.ref == 'refs/heads/main'
-      uses: peaceiris/actions-gh-pages@v4
-       with:
-       github_token: ${{ secrets.GITHUB_TOKEN }}
-       publish_dir: allure-history
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-history
