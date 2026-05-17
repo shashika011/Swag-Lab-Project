@@ -1,0 +1,7 @@
+<extentreports>
+    <configuration>
+        <theme>dark</theme>
+        <reportName>Automation Test Report</reportName>
+        <documentTitle>Execution Results</documentTitle>
+    </configuration>
+</extentreports>
