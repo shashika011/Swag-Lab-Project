@@ -110,11 +110,8 @@ public class ItemPurchaseTest extends BaseClass {
 		
 
 		purchase.clickShopCart();
-	
-	  
-		 
+	 
 		shopcart = PageFactory.initElements(driver, ShopCartpage.class);
-	
 		List<WebElement> shopc = shopcart.validateMultiplePurchase();
 		shopcartitemName1 = shopc.get(0).getText();
 		shopcartitemPrice1 = shopc.get(1).getText();
@@ -131,9 +128,7 @@ public class ItemPurchaseTest extends BaseClass {
 		 Assert.assertEquals(shopcartitemName1, itemName1);
 		 Assert.assertEquals(shopcartitemPrice1, itemPrice1);
 		 Assert.assertEquals(shopcartitemName2, itemName2);
-		 Assert.assertEquals(shopcartitemPrice2, itemPrice2);
-		 
-		
+		 Assert.assertEquals(shopcartitemPrice2, itemPrice2);	
 
 	}
 

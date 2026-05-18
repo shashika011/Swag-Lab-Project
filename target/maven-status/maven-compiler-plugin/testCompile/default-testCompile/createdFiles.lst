@@ -1,0 +1,11 @@
+com\swaglabtest\utility\ConfigProvider.class
+com\swaglabtest\pages\test.class
+com\swaglabtest\pages\MainLoginPage.class
+com\swaglabtest\utility\BrowserFactory.class
+com\swaglabtest\pages\BaseClass.class
+com\swaglabtest\pages\ItemPurchase.class
+com\swaglabtest\pages\ShopCartpage.class
+com\swaglabtest\testcases\MainPageLoginTest.class
+com\swaglabtest\utility\ExcelDataProvider.class
+com\swaglabtest\testcases\ItemPurchaseTest.class
+com\swaglabtest\utility\Helper.class
