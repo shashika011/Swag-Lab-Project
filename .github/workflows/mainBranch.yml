@@ -66,14 +66,18 @@ jobs:
         id: report
         run: echo "url=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> $GITHUB_OUTPUT
 
-      - name: Debug Secrets (safe check)
+      # ✅ Safe debug (checks if secret exists)
+      - name: Debug Secrets
         run: |
-          if [ -z "${{ secrets.MAIL_USERNAME }}" ]; then
-            echo "MAIL_USERNAME is EMPTY"
+          if [ -z "$MAIL_USERNAME" ]; then
+            echo "MAIL_USERNAME is EMPTY ❌"
           else
-            echo "MAIL_USERNAME is OK"
+            echo "MAIL_USERNAME is OK ✅"
           fi
+        env:
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
 
+      # ✅ Send email (FIXED)
       - name: Send Email with Allure Report
         uses: dawidd6/action-send-mail@v3
         if: always()
