@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   build:
@@ -24,34 +22,32 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Build with Maven
+      - name: Build and run tests
         run: mvn clean test
 
       - name: Generate Allure Report
-        run: |
-          mvn io.qameta.allure:allure-maven:report
+        run: mvn allure:report
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: target/site/allure-maven-plugin
+          publish_dir: ./target/site/allure-maven-plugin
 
-      - name: Send Email with Allure Report
+      - name: Send Email Notification
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
           server_port: 465
           secure: true
 
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
+          username: ${{ secrets.GMAIL_USERNAME }}
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
 
-          from: ${{ secrets.MAIL_USERNAME }}
+          from: ${{ secrets.GMAIL_USERNAME }}
           to: your_email@gmail.com
 
           subject: "Allure Test Report - Swag Lab Project"
-
           body: |
             Allure report generated successfully.
 
