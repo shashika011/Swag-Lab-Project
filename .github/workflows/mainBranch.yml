@@ -34,13 +34,10 @@ jobs:
         run: mvn clean test
         continue-on-error: true
 
-      - name: Check Allure results
+      - name: Ensure Allure results exist
         run: |
-          if [ -d "target/allure-results" ] && [ "$(ls -A target/allure-results)" ]; then
-            echo "Allure results found"
-          else
-            echo "No Allure results found"
-          fi
+          mkdir -p target/allure-results
+          ls -la target/allure-results || echo "No results yet"
 
       - name: Upload Allure Results
         uses: actions/upload-artifact@v4
@@ -65,11 +62,19 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: allure-history
 
-      - name: Get Report URL
+      - name: Generate Report URL
         id: report
         run: echo "url=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> $GITHUB_OUTPUT
 
-      - name: Send Email (Allure Report)
+      - name: Debug Secrets (safe check)
+        run: |
+          if [ -z "${{ secrets.MAIL_USERNAME }}" ]; then
+            echo "MAIL_USERNAME is EMPTY"
+          else
+            echo "MAIL_USERNAME is OK"
+          fi
+
+      - name: Send Email with Allure Report
         uses: dawidd6/action-send-mail@v3
         if: always()
         with:
