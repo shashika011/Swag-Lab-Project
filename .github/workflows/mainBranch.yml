@@ -81,9 +81,10 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
 
-          subject: Allure Test Report - ${{ github.repository }}
-          to: your_email@gmail.com
           from: ${{ secrets.MAIL_USERNAME }}
+          to: your_email@gmail.com
+
+          subject: Allure Test Report - ${{ github.repository }}
 
           body: |
             Allure report generated successfully.
