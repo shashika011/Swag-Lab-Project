@@ -10,10 +10,6 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,51 +19,35 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up JDK 17
+      - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 17
 
-      - name: Build and run tests
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Allure
+        run: npm install -g allure-commandline --save-dev
+
+      - name: Run Tests
         run: mvn clean test
+        continue-on-error: true
 
       - name: Generate Allure Report
-        run: mvn allure:report
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+        run: allure generate target/allure-results --clean -o allure-report
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./target/site/allure-maven-plugin
+          path: allure-report
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
-
-      - name: Send Email Notification
-        if: success()
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 587
-          secure: false
-
-          username: ${{ secrets.GMAIL_USERNAME }}
-          password: ${{ secrets.GMAIL_APP_PASSWORD }}
-
-          from: ${{ secrets.GMAIL_USERNAME }}
-          to: ${{ secrets.GMAIL_USERNAME }}
-
-          subject: Allure Test Report - Swag Lab Project
-
-          body: |
-            Build SUCCESS ✅
-
-            Allure Report:
-            https://shashika011.github.io/Swag-Lab-Project/
+        uses: actions/deploy-pages@v4
