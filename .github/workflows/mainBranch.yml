@@ -36,8 +36,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./target/site/allure-maven-plugin
 
-      - name: Send Email Notification (only on success)
-        if: success()
+      - name: Send Email Notification (only on success & main branch)
+        if: success() && github.ref == 'refs/heads/main'
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
@@ -53,7 +53,7 @@ jobs:
           subject: Allure Test Report - Swag Lab Project
 
           body: |
-            Build SUCCESS ✅
+            Build SUCCESS 
 
-            Report URL:
+            Allure Report is available at:
             https://shashika011.github.io/Swag-Lab-Project/
