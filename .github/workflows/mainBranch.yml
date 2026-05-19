@@ -35,21 +35,24 @@ jobs:
           publish_dir: ./target/site/allure-maven-plugin
 
       - name: Send Email Notification
+        continue-on-error: true
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
-          server_port: 465
-          secure: true
+          server_port: 587
+          secure: false
 
           username: ${{ secrets.GMAIL_USERNAME }}
           password: ${{ secrets.GMAIL_APP_PASSWORD }}
 
-          from: ${{ secrets.GMAIL_USERNAME }}
-          to: your_email@gmail.com
+          subject: Allure Test Report - Swag Lab Project
 
-          subject: "Allure Test Report - Swag Lab Project"
+          from: ${{ secrets.GMAIL_USERNAME }}
+
+          to: YOUR_REAL_EMAIL@gmail.com
+
           body: |
             Allure report generated successfully.
 
             Report URL:
-            https://shashika011.github.io/Swag-Lab
+            https://shashika011.github.io/Swag-Lab-Project/
