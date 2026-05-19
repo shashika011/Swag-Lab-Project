@@ -65,3 +65,25 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: allure-history
+
+      - name: Send Email with Allure Report Link
+        uses: dawidd6/action-send-mail@v3
+        if: always()
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+
+          subject: Allure Test Report Generated
+
+          to: your_email@gmail.com
+          from: GitHub Actions
+
+          body: |
+            Allure report generated successfully.
+
+            Report URL:
+            https://shashika011.github.io/Swag_Lab_Project/
