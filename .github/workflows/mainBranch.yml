@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -35,7 +37,6 @@ jobs:
           publish_dir: ./target/site/allure-maven-plugin
 
       - name: Send Email Notification
-        continue-on-error: true
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
@@ -45,11 +46,12 @@ jobs:
           username: ${{ secrets.GMAIL_USERNAME }}
           password: ${{ secrets.GMAIL_APP_PASSWORD }}
 
-          subject: Allure Test Report - Swag Lab Project
-
           from: ${{ secrets.GMAIL_USERNAME }}
 
-          to: YOUR_REAL_EMAIL@gmail.com
+          # send to yourself (recommended)
+          to: ${{ secrets.GMAIL_USERNAME }}
+
+          subject: Allure Test Report - Swag Lab Project
 
           body: |
             Allure report generated successfully.
