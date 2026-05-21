@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-18T19:26:39 IST" name="Suite" finished-at="2026-05-18T19:27:18 IST" duration-ms="38578">
+  <suite started-at="2026-05-21T09:58:23 IST" name="Suite" finished-at="2026-05-21T09:58:58 IST" duration-ms="34779">
     <groups>
     </groups>
-    <test started-at="2026-05-18T19:26:39 IST" name="Testchrome" finished-at="2026-05-18T19:27:01 IST" duration-ms="21963">
+    <test started-at="2026-05-21T09:58:23 IST" name="Testchrome" finished-at="2026-05-21T09:58:41 IST" duration-ms="17741">
       <class name="com.swaglabtest.testcases.ItemPurchaseTest">
-        <test-method is-config="true" signature="setupClass(java.lang.String)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391]" started-at="2026-05-18T19:26:52 IST" name="setupClass" finished-at="2026-05-18T19:26:59 IST" duration-ms="7423" status="PASS">
+        <test-method is-config="true" signature="setupClass(java.lang.String)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:33 IST" name="setupClass" finished-at="2026-05-21T09:58:39 IST" duration-ms="5762" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391]" started-at="2026-05-18T19:26:59 IST" name="startTest" finished-at="2026-05-18T19:26:59 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:39 IST" name="startTest" finished-at="2026-05-21T09:58:39 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391]" started-at="2026-05-18T19:26:59 IST" name="PageIninitialize" finished-at="2026-05-18T19:27:00 IST" duration-ms="236" status="PASS">
+        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:39 IST" name="PageIninitialize" finished-at="2026-05-21T09:58:39 IST" duration-ms="227" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,22 +40,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageIninitialize -->
-        <test-method signature="getTitle()[pri:1, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391]" started-at="2026-05-18T19:27:00 IST" name="getTitle" finished-at="2026-05-18T19:27:00 IST" duration-ms="10" status="PASS">
+        <test-method signature="getTitle()[pri:1, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:39 IST" name="getTitle" finished-at="2026-05-21T09:58:39 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTitle -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391]" started-at="2026-05-18T19:27:00 IST" name="tearDownMethod" finished-at="2026-05-18T19:27:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:39 IST" name="tearDownMethod" finished-at="2026-05-21T09:58:39 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getTitle status=SUCCESS method=ItemPurchaseTest.getTitle()[pri:1, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391] output={null}]]]>
+                <![CDATA[[TestResult name=getTitle status=SUCCESS method=ItemPurchaseTest.getTitle()[pri:1, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391]" started-at="2026-05-18T19:27:00 IST" name="startTest" finished-at="2026-05-18T19:27:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:39 IST" name="startTest" finished-at="2026-05-21T09:58:39 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,7 +66,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391]" started-at="2026-05-18T19:27:00 IST" name="PageIninitialize" finished-at="2026-05-18T19:27:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:39 IST" name="PageIninitialize" finished-at="2026-05-21T09:58:39 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,22 +77,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageIninitialize -->
-        <test-method signature="SigelItemPurchase()[pri:2, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391]" started-at="2026-05-18T19:27:00 IST" name="SigelItemPurchase" finished-at="2026-05-18T19:27:01 IST" duration-ms="931" status="PASS">
+        <test-method signature="SigelItemPurchase()[pri:2, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:39 IST" name="SigelItemPurchase" finished-at="2026-05-21T09:58:40 IST" duration-ms="810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SigelItemPurchase -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391]" started-at="2026-05-18T19:27:01 IST" name="tearDownMethod" finished-at="2026-05-18T19:27:01 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:40 IST" name="tearDownMethod" finished-at="2026-05-21T09:58:40 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SigelItemPurchase status=SUCCESS method=ItemPurchaseTest.SigelItemPurchase()[pri:2, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391] output={null}]]]>
+                <![CDATA[[TestResult name=SigelItemPurchase status=SUCCESS method=ItemPurchaseTest.SigelItemPurchase()[pri:2, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391]" started-at="2026-05-18T19:27:01 IST" name="startTest" finished-at="2026-05-18T19:27:01 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:40 IST" name="startTest" finished-at="2026-05-21T09:58:40 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -103,7 +103,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391]" started-at="2026-05-18T19:27:01 IST" name="PageIninitialize" finished-at="2026-05-18T19:27:01 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:40 IST" name="PageIninitialize" finished-at="2026-05-21T09:58:40 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,28 +114,65 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageIninitialize -->
-        <test-method signature="multipleItemPurchase()[pri:3, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391]" started-at="2026-05-18T19:27:01 IST" name="multipleItemPurchase" finished-at="2026-05-18T19:27:01 IST" duration-ms="614" status="PASS">
+        <test-method signature="multipleItemPurchase()[pri:3, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:40 IST" name="multipleItemPurchase" finished-at="2026-05-21T09:58:41 IST" duration-ms="626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleItemPurchase -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391]" started-at="2026-05-18T19:27:01 IST" name="tearDownMethod" finished-at="2026-05-18T19:27:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:41 IST" name="tearDownMethod" finished-at="2026-05-21T09:58:41 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=multipleItemPurchase status=SUCCESS method=ItemPurchaseTest.multipleItemPurchase()[pri:3, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391] output={null}]]]>
+                <![CDATA[[TestResult name=multipleItemPurchase status=SUCCESS method=ItemPurchaseTest.multipleItemPurchase()[pri:3, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="teardownClass()[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6e33c391]" started-at="2026-05-18T19:27:01 IST" name="teardownClass" finished-at="2026-05-18T19:27:01 IST" duration-ms="136" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:41 IST" name="startTest" finished-at="2026-05-21T09:58:41 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.swaglabtest.testcases.ItemPurchaseTest.threeItemPurchase()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:41 IST" name="PageIninitialize" finished-at="2026-05-21T09:58:41 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.swaglabtest.testcases.ItemPurchaseTest.threeItemPurchase()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageIninitialize -->
+        <test-method signature="threeItemPurchase()[pri:4, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:41 IST" name="threeItemPurchase" finished-at="2026-05-21T09:58:41 IST" duration-ms="517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- threeItemPurchase -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:41 IST" name="tearDownMethod" finished-at="2026-05-21T09:58:41 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=threeItemPurchase status=SUCCESS method=ItemPurchaseTest.threeItemPurchase()[pri:4, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="teardownClass()[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@6c451c9c]" started-at="2026-05-21T09:58:41 IST" name="teardownClass" finished-at="2026-05-21T09:58:41 IST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownClass -->
       </class> <!-- com.swaglabtest.testcases.ItemPurchaseTest -->
       <class name="com.swaglabtest.testcases.MainPageLoginTest">
-        <test-method is-config="true" signature="setupClass(java.lang.String)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1e11bc55]" started-at="2026-05-18T19:26:39 IST" name="setupClass" finished-at="2026-05-18T19:26:51 IST" duration-ms="11483" status="PASS">
+        <test-method is-config="true" signature="setupClass(java.lang.String)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@7544a1e4]" started-at="2026-05-21T09:58:23 IST" name="setupClass" finished-at="2026-05-21T09:58:32 IST" duration-ms="8565" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,7 +183,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1e11bc55]" started-at="2026-05-18T19:26:51 IST" name="startTest" finished-at="2026-05-18T19:26:51 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@7544a1e4]" started-at="2026-05-21T09:58:32 IST" name="startTest" finished-at="2026-05-21T09:58:32 IST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -157,7 +194,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1e11bc55]" started-at="2026-05-18T19:26:51 IST" name="PageIninitialize" finished-at="2026-05-18T19:26:51 IST" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@7544a1e4]" started-at="2026-05-21T09:58:32 IST" name="PageIninitialize" finished-at="2026-05-21T09:58:32 IST" duration-ms="17" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -168,22 +205,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageIninitialize -->
-        <test-method signature="UserLogingWithInvalidCredentials()[pri:1, instance:com.swaglabtest.testcases.MainPageLoginTest@1e11bc55]" started-at="2026-05-18T19:26:51 IST" name="UserLogingWithInvalidCredentials" finished-at="2026-05-18T19:26:52 IST" duration-ms="497" status="PASS">
+        <test-method signature="UserLogingWithInvalidCredentials()[pri:1, instance:com.swaglabtest.testcases.MainPageLoginTest@7544a1e4]" started-at="2026-05-21T09:58:32 IST" name="UserLogingWithInvalidCredentials" finished-at="2026-05-21T09:58:33 IST" duration-ms="443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserLogingWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1e11bc55]" started-at="2026-05-18T19:26:52 IST" name="tearDownMethod" finished-at="2026-05-18T19:26:52 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@7544a1e4]" started-at="2026-05-21T09:58:33 IST" name="tearDownMethod" finished-at="2026-05-21T09:58:33 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserLogingWithInvalidCredentials status=SUCCESS method=MainPageLoginTest.UserLogingWithInvalidCredentials()[pri:1, instance:com.swaglabtest.testcases.MainPageLoginTest@1e11bc55] output={null}]]]>
+                <![CDATA[[TestResult name=UserLogingWithInvalidCredentials status=SUCCESS method=MainPageLoginTest.UserLogingWithInvalidCredentials()[pri:1, instance:com.swaglabtest.testcases.MainPageLoginTest@7544a1e4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1e11bc55]" started-at="2026-05-18T19:26:52 IST" name="startTest" finished-at="2026-05-18T19:26:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@7544a1e4]" started-at="2026-05-21T09:58:33 IST" name="startTest" finished-at="2026-05-21T09:58:33 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -194,7 +231,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1e11bc55]" started-at="2026-05-18T19:26:52 IST" name="PageIninitialize" finished-at="2026-05-18T19:26:52 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@7544a1e4]" started-at="2026-05-21T09:58:33 IST" name="PageIninitialize" finished-at="2026-05-21T09:58:33 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -205,30 +242,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageIninitialize -->
-        <test-method signature="UserLogingWithvalidCredentials()[pri:2, instance:com.swaglabtest.testcases.MainPageLoginTest@1e11bc55]" started-at="2026-05-18T19:26:52 IST" name="UserLogingWithvalidCredentials" finished-at="2026-05-18T19:26:52 IST" duration-ms="286" status="PASS">
+        <test-method signature="UserLogingWithvalidCredentials()[pri:2, instance:com.swaglabtest.testcases.MainPageLoginTest@7544a1e4]" started-at="2026-05-21T09:58:33 IST" name="UserLogingWithvalidCredentials" finished-at="2026-05-21T09:58:33 IST" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserLogingWithvalidCredentials -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1e11bc55]" started-at="2026-05-18T19:26:52 IST" name="tearDownMethod" finished-at="2026-05-18T19:26:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@7544a1e4]" started-at="2026-05-21T09:58:33 IST" name="tearDownMethod" finished-at="2026-05-21T09:58:33 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserLogingWithvalidCredentials status=SUCCESS method=MainPageLoginTest.UserLogingWithvalidCredentials()[pri:2, instance:com.swaglabtest.testcases.MainPageLoginTest@1e11bc55] output={null}]]]>
+                <![CDATA[[TestResult name=UserLogingWithvalidCredentials status=SUCCESS method=MainPageLoginTest.UserLogingWithvalidCredentials()[pri:2, instance:com.swaglabtest.testcases.MainPageLoginTest@7544a1e4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="teardownClass()[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1e11bc55]" started-at="2026-05-18T19:26:52 IST" name="teardownClass" finished-at="2026-05-18T19:26:52 IST" duration-ms="131" status="PASS">
+        <test-method is-config="true" signature="teardownClass()[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@7544a1e4]" started-at="2026-05-21T09:58:33 IST" name="teardownClass" finished-at="2026-05-21T09:58:33 IST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownClass -->
       </class> <!-- com.swaglabtest.testcases.MainPageLoginTest -->
     </test> <!-- Testchrome -->
-    <test started-at="2026-05-18T19:27:01 IST" name="Testfirefox" finished-at="2026-05-18T19:27:18 IST" duration-ms="16596">
+    <test started-at="2026-05-21T09:58:41 IST" name="Testfirefox" finished-at="2026-05-21T09:58:58 IST" duration-ms="17008">
       <class name="com.swaglabtest.testcases.ItemPurchaseTest">
-        <test-method is-config="true" signature="setupClass(java.lang.String)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d]" started-at="2026-05-18T19:27:11 IST" name="setupClass" finished-at="2026-05-18T19:27:15 IST" duration-ms="3877" status="PASS">
+        <test-method is-config="true" signature="setupClass(java.lang.String)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:51 IST" name="setupClass" finished-at="2026-05-21T09:58:54 IST" duration-ms="3842" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -239,7 +276,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d]" started-at="2026-05-18T19:27:15 IST" name="startTest" finished-at="2026-05-18T19:27:15 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:54 IST" name="startTest" finished-at="2026-05-21T09:58:54 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -250,7 +287,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d]" started-at="2026-05-18T19:27:15 IST" name="PageIninitialize" finished-at="2026-05-18T19:27:15 IST" duration-ms="257" status="PASS">
+        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:54 IST" name="PageIninitialize" finished-at="2026-05-21T09:58:55 IST" duration-ms="192" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -261,22 +298,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageIninitialize -->
-        <test-method signature="getTitle()[pri:1, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d]" started-at="2026-05-18T19:27:15 IST" name="getTitle" finished-at="2026-05-18T19:27:15 IST" duration-ms="6" status="PASS">
+        <test-method signature="getTitle()[pri:1, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:55 IST" name="getTitle" finished-at="2026-05-21T09:58:55 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTitle -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d]" started-at="2026-05-18T19:27:15 IST" name="tearDownMethod" finished-at="2026-05-18T19:27:15 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:55 IST" name="tearDownMethod" finished-at="2026-05-21T09:58:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getTitle status=SUCCESS method=ItemPurchaseTest.getTitle()[pri:1, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d] output={null}]]]>
+                <![CDATA[[TestResult name=getTitle status=SUCCESS method=ItemPurchaseTest.getTitle()[pri:1, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d]" started-at="2026-05-18T19:27:15 IST" name="startTest" finished-at="2026-05-18T19:27:15 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:55 IST" name="startTest" finished-at="2026-05-21T09:58:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -287,7 +324,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d]" started-at="2026-05-18T19:27:15 IST" name="PageIninitialize" finished-at="2026-05-18T19:27:15 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:55 IST" name="PageIninitialize" finished-at="2026-05-21T09:58:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -298,22 +335,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageIninitialize -->
-        <test-method signature="SigelItemPurchase()[pri:2, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d]" started-at="2026-05-18T19:27:15 IST" name="SigelItemPurchase" finished-at="2026-05-18T19:27:17 IST" duration-ms="1751" status="PASS">
+        <test-method signature="SigelItemPurchase()[pri:2, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:55 IST" name="SigelItemPurchase" finished-at="2026-05-21T09:58:56 IST" duration-ms="1190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SigelItemPurchase -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d]" started-at="2026-05-18T19:27:17 IST" name="tearDownMethod" finished-at="2026-05-18T19:27:17 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:56 IST" name="tearDownMethod" finished-at="2026-05-21T09:58:56 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SigelItemPurchase status=SUCCESS method=ItemPurchaseTest.SigelItemPurchase()[pri:2, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d] output={null}]]]>
+                <![CDATA[[TestResult name=SigelItemPurchase status=SUCCESS method=ItemPurchaseTest.SigelItemPurchase()[pri:2, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d]" started-at="2026-05-18T19:27:17 IST" name="startTest" finished-at="2026-05-18T19:27:17 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:56 IST" name="startTest" finished-at="2026-05-21T09:58:56 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -324,7 +361,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d]" started-at="2026-05-18T19:27:17 IST" name="PageIninitialize" finished-at="2026-05-18T19:27:17 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:56 IST" name="PageIninitialize" finished-at="2026-05-21T09:58:56 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -335,32 +372,69 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageIninitialize -->
-        <test-method signature="multipleItemPurchase()[pri:3, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d]" started-at="2026-05-18T19:27:17 IST" name="multipleItemPurchase" finished-at="2026-05-18T19:27:17 IST" duration-ms="657" status="PASS">
+        <test-method signature="multipleItemPurchase()[pri:3, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:56 IST" name="multipleItemPurchase" finished-at="2026-05-21T09:58:57 IST" duration-ms="1147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleItemPurchase -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d]" started-at="2026-05-18T19:27:17 IST" name="tearDownMethod" finished-at="2026-05-18T19:27:17 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:57 IST" name="tearDownMethod" finished-at="2026-05-21T09:58:57 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=multipleItemPurchase status=SUCCESS method=ItemPurchaseTest.multipleItemPurchase()[pri:3, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d] output={null}]]]>
+                <![CDATA[[TestResult name=multipleItemPurchase status=SUCCESS method=ItemPurchaseTest.multipleItemPurchase()[pri:3, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="teardownClass()[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@1804f60d]" started-at="2026-05-18T19:27:17 IST" name="teardownClass" finished-at="2026-05-18T19:27:18 IST" duration-ms="757" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:57 IST" name="startTest" finished-at="2026-05-21T09:58:57 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.swaglabtest.testcases.ItemPurchaseTest.threeItemPurchase()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:57 IST" name="PageIninitialize" finished-at="2026-05-21T09:58:57 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.swaglabtest.testcases.ItemPurchaseTest.threeItemPurchase()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageIninitialize -->
+        <test-method signature="threeItemPurchase()[pri:4, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:57 IST" name="threeItemPurchase" finished-at="2026-05-21T09:58:58 IST" duration-ms="561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- threeItemPurchase -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:58 IST" name="tearDownMethod" finished-at="2026-05-21T09:58:58 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=threeItemPurchase status=SUCCESS method=ItemPurchaseTest.threeItemPurchase()[pri:4, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="teardownClass()[pri:0, instance:com.swaglabtest.testcases.ItemPurchaseTest@3a80515c]" started-at="2026-05-21T09:58:58 IST" name="teardownClass" finished-at="2026-05-21T09:58:58 IST" duration-ms="674" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownClass -->
       </class> <!-- com.swaglabtest.testcases.ItemPurchaseTest -->
       <class name="com.swaglabtest.testcases.MainPageLoginTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@69c43e48]" started-at="2026-05-18T19:26:39 IST" name="setupSuite" finished-at="2026-05-18T19:26:39 IST" duration-ms="838" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1804f60d]" started-at="2026-05-21T09:58:23 IST" name="setupSuite" finished-at="2026-05-21T09:58:23 IST" duration-ms="830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setupClass(java.lang.String)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@69c43e48]" started-at="2026-05-18T19:27:01 IST" name="setupClass" finished-at="2026-05-18T19:27:08 IST" duration-ms="6393" status="PASS">
+        <test-method is-config="true" signature="setupClass(java.lang.String)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1804f60d]" started-at="2026-05-21T09:58:41 IST" name="setupClass" finished-at="2026-05-21T09:58:48 IST" duration-ms="6500" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -371,7 +445,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@69c43e48]" started-at="2026-05-18T19:27:08 IST" name="startTest" finished-at="2026-05-18T19:27:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1804f60d]" started-at="2026-05-21T09:58:48 IST" name="startTest" finished-at="2026-05-21T09:58:48 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -382,7 +456,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@69c43e48]" started-at="2026-05-18T19:27:08 IST" name="PageIninitialize" finished-at="2026-05-18T19:27:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1804f60d]" started-at="2026-05-21T09:58:48 IST" name="PageIninitialize" finished-at="2026-05-21T09:58:48 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -393,22 +467,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageIninitialize -->
-        <test-method signature="UserLogingWithInvalidCredentials()[pri:1, instance:com.swaglabtest.testcases.MainPageLoginTest@69c43e48]" started-at="2026-05-18T19:27:08 IST" name="UserLogingWithInvalidCredentials" finished-at="2026-05-18T19:27:10 IST" duration-ms="1900" status="PASS">
+        <test-method signature="UserLogingWithInvalidCredentials()[pri:1, instance:com.swaglabtest.testcases.MainPageLoginTest@1804f60d]" started-at="2026-05-21T09:58:48 IST" name="UserLogingWithInvalidCredentials" finished-at="2026-05-21T09:58:50 IST" duration-ms="1960" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserLogingWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@69c43e48]" started-at="2026-05-18T19:27:10 IST" name="tearDownMethod" finished-at="2026-05-18T19:27:10 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1804f60d]" started-at="2026-05-21T09:58:50 IST" name="tearDownMethod" finished-at="2026-05-21T09:58:50 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserLogingWithInvalidCredentials status=SUCCESS method=MainPageLoginTest.UserLogingWithInvalidCredentials()[pri:1, instance:com.swaglabtest.testcases.MainPageLoginTest@69c43e48] output={null}]]]>
+                <![CDATA[[TestResult name=UserLogingWithInvalidCredentials status=SUCCESS method=MainPageLoginTest.UserLogingWithInvalidCredentials()[pri:1, instance:com.swaglabtest.testcases.MainPageLoginTest@1804f60d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@69c43e48]" started-at="2026-05-18T19:27:10 IST" name="startTest" finished-at="2026-05-18T19:27:10 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1804f60d]" started-at="2026-05-21T09:58:50 IST" name="startTest" finished-at="2026-05-21T09:58:50 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -419,7 +493,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@69c43e48]" started-at="2026-05-18T19:27:10 IST" name="PageIninitialize" finished-at="2026-05-18T19:27:10 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="PageIninitialize(java.lang.reflect.Method)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1804f60d]" started-at="2026-05-21T09:58:50 IST" name="PageIninitialize" finished-at="2026-05-21T09:58:50 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -430,26 +504,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageIninitialize -->
-        <test-method signature="UserLogingWithvalidCredentials()[pri:2, instance:com.swaglabtest.testcases.MainPageLoginTest@69c43e48]" started-at="2026-05-18T19:27:10 IST" name="UserLogingWithvalidCredentials" finished-at="2026-05-18T19:27:10 IST" duration-ms="184" status="PASS">
+        <test-method signature="UserLogingWithvalidCredentials()[pri:2, instance:com.swaglabtest.testcases.MainPageLoginTest@1804f60d]" started-at="2026-05-21T09:58:50 IST" name="UserLogingWithvalidCredentials" finished-at="2026-05-21T09:58:50 IST" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserLogingWithvalidCredentials -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@69c43e48]" started-at="2026-05-18T19:27:10 IST" name="tearDownMethod" finished-at="2026-05-18T19:27:10 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1804f60d]" started-at="2026-05-21T09:58:50 IST" name="tearDownMethod" finished-at="2026-05-21T09:58:50 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserLogingWithvalidCredentials status=SUCCESS method=MainPageLoginTest.UserLogingWithvalidCredentials()[pri:2, instance:com.swaglabtest.testcases.MainPageLoginTest@69c43e48] output={null}]]]>
+                <![CDATA[[TestResult name=UserLogingWithvalidCredentials status=SUCCESS method=MainPageLoginTest.UserLogingWithvalidCredentials()[pri:2, instance:com.swaglabtest.testcases.MainPageLoginTest@1804f60d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="teardownClass()[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@69c43e48]" started-at="2026-05-18T19:27:10 IST" name="teardownClass" finished-at="2026-05-18T19:27:11 IST" duration-ms="758" status="PASS">
+        <test-method is-config="true" signature="teardownClass()[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1804f60d]" started-at="2026-05-21T09:58:50 IST" name="teardownClass" finished-at="2026-05-21T09:58:51 IST" duration-ms="693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownClass -->
-        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@69c43e48]" started-at="2026-05-18T19:27:18 IST" name="teardownSuite" finished-at="2026-05-18T19:27:18 IST" duration-ms="347" status="PASS">
+        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:com.swaglabtest.testcases.MainPageLoginTest@1804f60d]" started-at="2026-05-21T09:58:58 IST" name="teardownSuite" finished-at="2026-05-21T09:58:59 IST" duration-ms="339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownSuite -->

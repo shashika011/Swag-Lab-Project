@@ -1,36 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Testedge(failed)">
-    <parameter name="browser" value="edge"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.swaglabtest.testcases.MainPageLoginTest">
-        <methods>
-          <include name="UserLogingWithvalidCredentials"/>
-          <include name="startTest"/>
-          <include name="teardownSuite"/>
-          <include name="UserLogingWithInvalidCredentials"/>
-          <include name="setupSuite"/>
-          <include name="teardownClass"/>
-          <include name="PageIninitialize"/>
-          <include name="tearDownMethod"/>
-          <include name="setupClass"/>
-        </methods>
-      </class> <!-- com.swaglabtest.testcases.MainPageLoginTest -->
       <class name="com.swaglabtest.testcases.ItemPurchaseTest">
         <methods>
-          <include name="getTitle"/>
-          <include name="SigelItemPurchase"/>
           <include name="startTest"/>
           <include name="teardownSuite"/>
           <include name="setupSuite"/>
+          <include name="threeItemPurchase"/>
           <include name="teardownClass"/>
           <include name="PageIninitialize"/>
-          <include name="multipleItemPurchase"/>
           <include name="tearDownMethod"/>
           <include name="setupClass"/>
         </methods>
       </class> <!-- com.swaglabtest.testcases.ItemPurchaseTest -->
     </classes>
-  </test> <!-- Testedge(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
