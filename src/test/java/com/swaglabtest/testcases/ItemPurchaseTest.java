@@ -2,6 +2,8 @@ package com.swaglabtest.testcases;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -9,7 +11,9 @@ import org.testng.annotations.Test;
 import com.swaglabtest.pages.BaseClass;
 import com.swaglabtest.pages.*;
 import java.lang.reflect.Method;
+import java.time.Duration;
 import java.util.List;
+import java.util.Set;
 
 public class ItemPurchaseTest extends BaseClass {
 
@@ -194,8 +198,8 @@ public class ItemPurchaseTest extends BaseClass {
 		 Assert.assertEquals(shopcartitemName3, itemName3);
 		 Assert.assertEquals(shopcartitemPrice3, itemPrice3);	
 		 
-		 driver.navigate().back();
-
+     
+		 
 	}
 	
 	

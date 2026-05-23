@@ -1,2 +1,10 @@
 Reports/
 logs/
+# Allure
+allure-results/
+allure-report/
+# Maven target
+target/
+
+# Test outputs
+test-output/
