@@ -8,9 +8,9 @@
           <include name="startTest"/>
           <include name="teardownSuite"/>
           <include name="setupSuite"/>
-          <include name="threeItemPurchase"/>
           <include name="teardownClass"/>
           <include name="PageIninitialize"/>
+          <include name="FourItemPurchase"/>
           <include name="tearDownMethod"/>
           <include name="setupClass"/>
         </methods>
