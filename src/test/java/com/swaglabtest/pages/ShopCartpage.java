@@ -47,6 +47,13 @@ public class ShopCartpage {
 	private final By SAUCE_LABS_ONESIE_PRICE = 
 			By.xpath("//div[text()='Sauce Labs Onesie']/ancestor::div[@class='cart_item']//div[@class='inventory_item_price']");
 
+	//Sauce_Labs_Fleece_Jacket
+	
+   private final By Sauce_Labs_Fleece_Jacket=
+		   By.xpath("//div[@class='inventory_item_name' and contains(text(),'Fleece')]");
+   
+   private final By Sauce_Labs_Fleece_Jacket_PRICE = 
+		   By.xpath("//div[text()='Sauce Labs Fleece Jacket']/ancestor::div[@class='cart_item']//div[@class='inventory_item_price']");
 	/* ===================== BUTTONS ===================== */
 
 	@FindBy(id = "continue-shopping")
@@ -94,18 +101,35 @@ public class ShopCartpage {
 	public List<WebElement> validateThreeItemPurchase() {
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(CART_CONTAINER));
-
-		WebElement Item1 = wait.until(ExpectedConditions.visibilityOfElementLocated(SAUCE_LABS_BACKPACK));
+        WebElement Item1 = wait.until(ExpectedConditions.visibilityOfElementLocated(SAUCE_LABS_BACKPACK));
 		WebElement Itemprice1 = wait.until(ExpectedConditions.visibilityOfElementLocated(SAUCE_LABS_BACKPACK_PRICE));
 		WebElement Item2 = wait.until(ExpectedConditions.visibilityOfElementLocated(SAUCE_LABS_BOLT_TSHIRT));
 		WebElement ItemPrice2 = wait.until(ExpectedConditions.visibilityOfElementLocated(SAUCE_LABS_BOLT_TSHIRT_PRICE));
-
 		WebElement Item3 = wait.until(ExpectedConditions.visibilityOfElementLocated(SAUCE_LABS_ONESIE));
 		WebElement Itemprice3 = wait.until(ExpectedConditions.visibilityOfElementLocated(SAUCE_LABS_ONESIE_PRICE));
 
 		return Arrays.asList(Item1, Itemprice1, Item2, ItemPrice2, Item3, Itemprice3);
 	}
 
+	/**
+	 * Validate four item purchase (optional)
+	 */
+	public List<WebElement> validatefourItemPurchase() {
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(CART_CONTAINER));
+        WebElement Item1 = wait.until(ExpectedConditions.visibilityOfElementLocated(SAUCE_LABS_BACKPACK));
+		WebElement Itemprice1 = wait.until(ExpectedConditions.visibilityOfElementLocated(SAUCE_LABS_BACKPACK_PRICE));
+		WebElement Item2 = wait.until(ExpectedConditions.visibilityOfElementLocated(SAUCE_LABS_BOLT_TSHIRT));
+		WebElement ItemPrice2 = wait.until(ExpectedConditions.visibilityOfElementLocated(SAUCE_LABS_BOLT_TSHIRT_PRICE));
+		WebElement Item3 = wait.until(ExpectedConditions.visibilityOfElementLocated(SAUCE_LABS_ONESIE));
+		WebElement Itemprice3 = wait.until(ExpectedConditions.visibilityOfElementLocated(SAUCE_LABS_ONESIE_PRICE));
+	
+		WebElement Item4 = wait.until(ExpectedConditions.visibilityOfElementLocated(Sauce_Labs_Fleece_Jacket));
+		WebElement Itemprice4 = wait.until(ExpectedConditions.visibilityOfElementLocated(Sauce_Labs_Fleece_Jacket_PRICE));
+
+		return Arrays.asList(Item1, Itemprice1, Item2, ItemPrice2, Item3, Itemprice3, Item4, Itemprice4);
+	}
+	
 	/* ===================== NAVIGATION ===================== */
 
 	public void clickContinueShopping() {

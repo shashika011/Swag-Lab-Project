@@ -52,6 +52,16 @@ public class ItemPurchase {
 	private final By Add_Test_allTheThing_T_Shirt_Red_Button = 
 			By.xpath("//a[@id='item_3_title_link']/parent::*/following-sibling::*/button");
 	
+	private final By Sauce_Labs_Fleece_Jacket = 
+	 By.xpath("//a[@id='item_5_title_link']/div");
+	private final By Sauce_Labs_Fleece_Jacket_Price =
+			By.xpath("//a[@id='item_5_title_link']/parent::div/following-sibling::div/div");
+	private final By Sauce_Labs_Fleece_Jacket_button = 
+			By.xpath("//a[@id='item_5_title_link']/parent::div/following-sibling::div/button");
+	
+	
+	
+	
 	private final By shopcart = 
 			By.xpath("//*[@class='shopping_cart_link']");
 	private final By shopping_cart_badge =
@@ -117,6 +127,46 @@ public class ItemPurchase {
 
 	    return Arrays.asList(itemname1, itemPrice1, itemname2, itemPrice2, itemname3, itemPrice3);
 	}
+	
+	
+	
+	//-- three  item purchase--
+		public List<WebElement> getAddNewItemFour() {
+			// FIRST ITEM
+		    WebElement itemname1 = wait.until(ExpectedConditions.elementToBeClickable(Sauce_Labs_Backpack));
+		    WebElement itemPrice1 = wait.until(ExpectedConditions.elementToBeClickable(Sauce_Labs_Backpack_Price));
+		    WebElement AddItemButton1 = wait.until(ExpectedConditions.elementToBeClickable(Add_Sauce_Labs_Backpack_button));
+		    if (AddItemButton1.getText().equals("Add to cart")) {
+		        AddItemButton1.click();
+		    }
+		    // Second item
+		    WebElement itemname2 = wait.until(ExpectedConditions.elementToBeClickable(Sauce_Labs_Bolt_T_Shirt));
+		    WebElement itemPrice2 = wait.until(ExpectedConditions.elementToBeClickable(Sauce_Labs_Bolt_T_Shirt_Price));
+		    WebElement AddItemButton2 = wait.until(ExpectedConditions.elementToBeClickable(Add_Sauce_Labs_Bolt_T_Shirt_Price_button));
+		    if (AddItemButton2.getText().equals("Add to cart")) {
+		        AddItemButton2.click();
+		    }
+		    
+		    // third item
+		    WebElement itemname3 = wait.until(ExpectedConditions.elementToBeClickable(Sauce_Labs_Onesie));
+		    WebElement itemPrice3 = wait.until(ExpectedConditions.elementToBeClickable(Sauce_Labs_Onesie_Price));
+		    WebElement AddItemButton3 = wait.until(ExpectedConditions.elementToBeClickable(Add_Sauce_Labs_Onesie_button));
+		    if (AddItemButton3.getText().equals("Add to cart")) {
+		        AddItemButton3.click();
+		    }
+
+		    // third item
+		    WebElement itemname4 = wait.until(ExpectedConditions.elementToBeClickable(Sauce_Labs_Fleece_Jacket));
+		    WebElement itemPrice4 = wait.until(ExpectedConditions.elementToBeClickable(Sauce_Labs_Fleece_Jacket_Price));
+		    WebElement AddItemButton4 = wait.until(ExpectedConditions.elementToBeClickable(Sauce_Labs_Fleece_Jacket_button));
+		    if (AddItemButton4.getText().equals("Add to cart")) {
+		        AddItemButton4.click();
+		    }
+		    
+		    
+		    return Arrays.asList(itemname1, itemPrice1, itemname2, itemPrice2, itemname3, itemPrice3, itemname4, itemPrice4);
+		}
+		
 	
 	
 	public void acceptAlert()
