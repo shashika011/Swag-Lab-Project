@@ -1,5 +1,5 @@
 Reports/
-logs/
+
 # Allure
 allure-results/
 allure-report/
@@ -8,3 +8,4 @@ target/
 
 # Test outputs
 test-output/
+*.log
