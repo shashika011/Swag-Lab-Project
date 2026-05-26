@@ -9,14 +9,14 @@
 	   <parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.swaglabtest.testcases.MainPageLoginTest" />
-			<class name="com.swaglabtest.testcases.ItemPurchaseTest" />
+			<class name="com.swaglabtest.testcases.NewPurchaseTest" />
 			</classes>
 	</test>
 	<test thread-count="5" name="Testfirefox">
 	   <parameter name="browser" value="firefox" />
 		<classes>
 			<class name="com.swaglabtest.testcases.MainPageLoginTest" />
-			<class name="com.swaglabtest.testcases.ItemPurchaseTest" />
+			<class name="com.swaglabtest.testcases.NewPurchaseTest" />
 			</classes>
 	</test>
 </suite>
