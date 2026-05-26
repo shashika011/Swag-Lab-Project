@@ -298,14 +298,10 @@ public class ItemPurchaseTest extends BaseClass {
 		 Assert.assertEquals(Expectedprice3,shopcartitemPrice3,"Shopping Cart display Item " + shopcartitemPrice3 + " Expected " + Expectedprice3);
 		 Assert.assertEquals(Expectedname4,shopcartitemName4,"Shopping Cart display Item " + shopcartitemName4 + " Expected " + Expectedname4);
 		 Assert.assertEquals(Expectedprice4,shopcartitemPrice4,"Shopping Cart display Item " + shopcartitemPrice4 + " Expected " + Expectedprice4);
-				
-		 
-     
-		 
+	 
+		 driver.navigate().back();
 	}
-	
-	
-	
+
 	
 	
 	

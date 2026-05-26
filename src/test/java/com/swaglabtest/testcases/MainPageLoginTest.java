@@ -53,23 +53,4 @@ public class MainPageLoginTest extends BaseClass{
 			}
 		}
 	}
-		
-
-//	@Test(priority = 2)
-//	public void UserLogingWithvalidCredentials() throws InterruptedException
-//	{
-//		MainLoginPage mainlogin=PageFactory.initElements(driver,MainLoginPage.class);
-//		mainlogin.ClearData();
-//		logger = report.createTest(excelp.getStringdata("Login", 2, 0));
-//		mainlogin.UserLogin(excelp.getStringdata("Login", 2, 1), excelp.getStringdata("Login", 2, 2));
-//		logger.info("username: "+excelp.getStringdata("Login", 2, 1));
-//		logger.info("password: "+excelp.getStringdata("Login", 2, 2));
-//		
-//		System.out.println(driver.getCurrentUrl());
-//		if (driver.getCurrentUrl().contains("https://www.saucedemo.com/inventory.html"))
-//		{logger.pass("Test Pass");
-//		}else {logger.fail("Test Fail");}
-//			
-//	}
-//
 }

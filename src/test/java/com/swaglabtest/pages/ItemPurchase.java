@@ -1,8 +1,11 @@
 package com.swaglabtest.pages;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +13,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+
 
 public class ItemPurchase {
 	
@@ -167,7 +172,7 @@ public class ItemPurchase {
 		    return Arrays.asList(itemname1, itemPrice1, itemname2, itemPrice2, itemname3, itemPrice3, itemname4, itemPrice4);
 		}
 		
-	
+
 	
 	public void acceptAlert()
 	{
