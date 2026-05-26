@@ -3,9 +3,13 @@ package com.swaglabtest.pages;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -129,6 +133,8 @@ public class ShopCartpage {
 
 		return Arrays.asList(Item1, Itemprice1, Item2, ItemPrice2, Item3, Itemprice3, Item4, Itemprice4);
 	}
+	
+	
 	
 	/* ===================== NAVIGATION ===================== */
 

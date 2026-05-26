@@ -44,7 +44,7 @@ public class ItemPurchaseTest extends BaseClass {
 	public void PageIninitialize(Method method) {
 
 		if (purchase == null) {
-			MainLoginPage login = PageFactory.initElements(driver, MainLoginPage.class);
+			login = PageFactory.initElements(driver, MainLoginPage.class);
 			login.UserLogin(excelp.getStringdata("Login", 2, 1), excelp.getStringdata("Login", 2, 2));
 			purchase = PageFactory.initElements(driver, ItemPurchase.class);
 
@@ -67,7 +67,7 @@ public class ItemPurchaseTest extends BaseClass {
 
 	@Test(priority = 2)
 	public void SigelItemPurchase()  {
-		
+		logger = report.createTest(excelp.getStringdata("Purchase", 1, 0));
 		List<WebElement> ele = purchase.getOneItemOrder();
 		itemName1 = ele.get(0).getText();
 		itemPrice1 = ele.get(1).getText();
@@ -75,12 +75,12 @@ public class ItemPurchaseTest extends BaseClass {
 	    logger.info("Selected Item: " + itemName1);
 	    logger.info("Selected Item Price: " + itemPrice1);
 	    
-		
-		Assert.assertEquals(excelp.getStringdata("Purchase", 1, 2),itemName1,
-				            "Selected Item " + itemName1 + " Expected " + excelp.getStringdata("Purchase", 1, 2));
-		Assert.assertEquals(excelp.getCurrencyData("Purchase", 1, 3),itemPrice1,
-				             "Selected Item price" + itemPrice1 + " Expected" + excelp.getCurrencyData("Purchase", 1, 3));
-      
+	    String Expectedname1=excelp.getStringdata("Purchase", 1, 2);
+	    String  Expectedprice1=excelp.getCurrencyData("Purchase", 1, 3);
+	    
+		Assert.assertEquals(Expectedname1,itemName1,"Selected Item " + itemName1 + " Expected " + Expectedname1);
+		Assert.assertEquals(Expectedprice1,itemPrice1,"Selected Item price " + itemPrice1 + " Expected " + Expectedprice1);
+       
 		purchase.clickShopCart();
 		
 		shopcart = PageFactory.initElements(driver, ShopCartpage.class);
@@ -91,9 +91,9 @@ public class ItemPurchaseTest extends BaseClass {
         
 		 logger.info("ShopCart Item: " + shopcartitemName1);
 		 logger.info("ShopCart Item Price: " + shopcartitemPrice1);
-
-		Assert.assertEquals(shopcartitemName1, itemName1);
-		Assert.assertEquals(shopcartitemPrice1, itemPrice1);
+	
+		Assert.assertEquals(Expectedname1,shopcartitemName1,"Shopping Cart display Item " + shopcartitemName1 + " Expected " + Expectedname1);
+		Assert.assertEquals(Expectedprice1,shopcartitemPrice1,"Shopping Cart display Item " + shopcartitemPrice1 + " Expected " + Expectedprice1);
 		
 		driver.navigate().back();
 	}
@@ -113,13 +113,17 @@ public class ItemPurchaseTest extends BaseClass {
 	    logger.info("Selected Item Price: " + itemPrice1);
 	    logger.info("Selected Item: " + itemName2);
 	    logger.info("Selected Item Price: " + itemPrice2);
-          
-		Assert.assertEquals(excelp.getStringdata("Purchase", 1, 2), itemName1,"Selected Item " + itemName1 + " Expected " + excelp.getStringdata("Purchase", 1, 2));
-		Assert.assertEquals(excelp.getCurrencyData("Purchase", 1, 3), itemPrice1,"Selected Item price" + itemPrice1 + " Expected" + excelp.getCurrencyData("Purchase", 1, 3));
-		Assert.assertEquals(excelp.getStringdata("Purchase", 2, 2), itemName2,"Selected Item " + itemName2 + " Expected " + excelp.getStringdata("Purchase", 2, 2));
-		Assert.assertEquals(excelp.getCurrencyData("Purchase", 2, 3), itemPrice2,"Selected Item price" + itemPrice2 + " Expected" + excelp.getCurrencyData("Purchase", 2, 3));
-		
-
+        
+	    String Expectedname1=excelp.getStringdata("Purchase", 1, 2);
+	    String Expectedprice1=excelp.getCurrencyData("Purchase", 1, 3);
+	    String Expectedname2=excelp.getStringdata("Purchase", 2, 2);
+	    String Expectedprice2=excelp.getCurrencyData("Purchase", 2, 3);
+	    
+		Assert.assertEquals(Expectedname1,itemName1,"Selected Item " + itemName1 + " Expected " + Expectedname1);
+		Assert.assertEquals(Expectedprice1,itemPrice1,"Selected Item price " + itemPrice1 + " Expected " + Expectedprice1);
+		Assert.assertEquals(Expectedname2,itemName2,"Selected Item " + itemName2 + " Expected " + Expectedname2);
+		Assert.assertEquals(Expectedprice2,itemPrice2,"Selected Item price " + itemPrice2 + " Expected " + Expectedprice2);
+	    
 		purchase.clickShopCart();
 	 
 		shopcart = PageFactory.initElements(driver, ShopCartpage.class);
@@ -135,10 +139,11 @@ public class ItemPurchaseTest extends BaseClass {
 		 logger.info("ShopCart Item Price: " + shopcartitemPrice2);
 		 
 		 
-		 Assert.assertEquals(shopcartitemName1, itemName1);
-		 Assert.assertEquals(shopcartitemPrice1, itemPrice1);
-		 Assert.assertEquals(shopcartitemName2, itemName2);
-		 Assert.assertEquals(shopcartitemPrice2, itemPrice2);	
+		 Assert.assertEquals(Expectedname1,shopcartitemName1,"Shopping Cart display Item " + shopcartitemName1 + " Expected " + Expectedname1);
+		 Assert.assertEquals(Expectedprice1,shopcartitemPrice1,"Shopping Cart display Item " + shopcartitemPrice1 + " Expected " + Expectedprice1);
+		 Assert.assertEquals(Expectedname2,shopcartitemName2,"Shopping Cart display Item " + shopcartitemName2 + " Expected " + Expectedname2);
+		 Assert.assertEquals(Expectedprice2,shopcartitemPrice2,"Shopping Cart display Item " + shopcartitemPrice2 + " Expected " + Expectedprice2);
+				
 		 
 		 driver.navigate().back();
 
@@ -149,7 +154,7 @@ public class ItemPurchaseTest extends BaseClass {
 	public void threeItemPurchase() {
 	
 
-		logger = report.createTest(excelp.getStringdata("Purchase", 2, 0));
+		logger = report.createTest(excelp.getStringdata("Purchase", 3, 0));
 		List<WebElement> ele = purchase.getAddNewItemthree();
 		itemName1 = ele.get(0).getText();
 		itemPrice1 = ele.get(1).getText();
@@ -165,15 +170,22 @@ public class ItemPurchaseTest extends BaseClass {
 	    logger.info("Selected Item Price: " + itemPrice2);
 	    logger.info("Selected Item: " + itemName3);
 	    logger.info("Selected Item Price: " + itemPrice3);
+	    
+	    
+	    String Expectedname1=excelp.getStringdata("Purchase", 1, 2);
+	    String Expectedprice1=excelp.getCurrencyData("Purchase", 1, 3);
+	    String Expectedname2=excelp.getStringdata("Purchase", 2, 2);
+	    String Expectedprice2=excelp.getCurrencyData("Purchase", 2, 3);
+	    String Expectedname3=excelp.getStringdata("Purchase", 3, 2);
+	    String Expectedprice3=excelp.getCurrencyData("Purchase", 3, 3);
+	    
+		Assert.assertEquals(Expectedname1,itemName1,"Selected Item " + itemName1 + " Expected " + Expectedname1);
+		Assert.assertEquals(Expectedprice1,itemPrice1,"Selected Item price " + itemPrice1 + " Expected " + Expectedprice1);
+		Assert.assertEquals(Expectedname2,itemName2,"Selected Item " + itemName2 + " Expected " + Expectedname2);
+		Assert.assertEquals(Expectedprice2,itemPrice2,"Selected Item price " + itemPrice2 + " Expected " + Expectedprice2);
+		Assert.assertEquals(Expectedname3,itemName3,"Selected Item " + itemName3 + " Expected " + Expectedname3);
+		Assert.assertEquals(Expectedprice3,itemPrice3,"Selected Item price " + itemPrice3 + " Expected " + Expectedprice3);
           
-		Assert.assertEquals(excelp.getStringdata("Purchase", 1, 2), itemName1,"Selected Item " + itemName1 + " Expected " + excelp.getStringdata("Purchase", 1, 2));
-		Assert.assertEquals(excelp.getCurrencyData("Purchase", 1, 3), itemPrice1,"Selected Item price" + itemPrice1 + " Expected" + excelp.getCurrencyData("Purchase", 1, 3));
-		Assert.assertEquals(excelp.getStringdata("Purchase", 2, 2), itemName2,"Selected Item " + itemName2 + " Expected " + excelp.getStringdata("Purchase", 2, 2));
-		Assert.assertEquals(excelp.getCurrencyData("Purchase", 2, 3), itemPrice2,"Selected Item price" + itemPrice2 + " Expected" + excelp.getCurrencyData("Purchase", 2, 3));
-		Assert.assertEquals(excelp.getStringdata("Purchase", 3, 2), itemName3,"Selected Item " + itemName3 + " Expected " + excelp.getStringdata("Purchase", 3, 2));
-		Assert.assertEquals(excelp.getCurrencyData("Purchase", 3, 3), itemPrice3,"Selected Item price" + itemPrice3 + " Expected" + excelp.getCurrencyData("Purchase", 3, 3));
-	
-
 		purchase.clickShopCart();
 	 
 		shopcart = PageFactory.initElements(driver, ShopCartpage.class);
@@ -194,12 +206,13 @@ public class ItemPurchaseTest extends BaseClass {
 		 logger.info("ShopCart Item Price: " + shopcartitemPrice3);
 
 		 
-		 Assert.assertEquals(shopcartitemName1, itemName1);
-		 Assert.assertEquals(shopcartitemPrice1, itemPrice1);
-		 Assert.assertEquals(shopcartitemName2, itemName2);
-		 Assert.assertEquals(shopcartitemPrice2, itemPrice2);	
-		 Assert.assertEquals(shopcartitemName3, itemName3);
-		 Assert.assertEquals(shopcartitemPrice3, itemPrice3);	
+		 Assert.assertEquals(Expectedname1,shopcartitemName1,"Shopping Cart display Item " + shopcartitemName1 + " Expected " + Expectedname1);
+		 Assert.assertEquals(Expectedprice1,shopcartitemPrice1,"Shopping Cart display Item " + shopcartitemPrice1 + " Expected " + Expectedprice1);
+		 Assert.assertEquals(Expectedname2,shopcartitemName2,"Shopping Cart display Item " + shopcartitemName2 + " Expected " + Expectedname2);
+		 Assert.assertEquals(Expectedprice2,shopcartitemPrice2,"Shopping Cart display Item " + shopcartitemPrice2 + " Expected " + Expectedprice2);
+		 Assert.assertEquals(Expectedname3,shopcartitemName3,"Shopping Cart display Item " + shopcartitemName3 + " Expected " + Expectedname3);
+		 Assert.assertEquals(Expectedprice3,shopcartitemPrice3,"Shopping Cart display Item " + shopcartitemPrice3 + " Expected " + Expectedprice3);
+			
 		 
 		 driver.navigate().back();
 		 
@@ -209,7 +222,8 @@ public class ItemPurchaseTest extends BaseClass {
 	public void FourItemPurchase() {
 	
 
-		logger = report.createTest(excelp.getStringdata("Purchase", 2, 0));
+		logger = report.createTest(excelp.getStringdata("Purchase", 4, 0));
+		//System.out.println(excelp.getStringdata("Purchase", 4, 0));
 		List<WebElement> ele = purchase.getAddNewItemFour();
 		itemName1 = ele.get(0).getText();
 		itemPrice1 = ele.get(1).getText();
@@ -229,17 +243,26 @@ public class ItemPurchaseTest extends BaseClass {
 	    logger.info("Selected Item Price: " + itemPrice3);
 	    logger.info("Selected Item: " + itemName4);
 	    logger.info("Selected Item Price: " + itemPrice4);
-          
-		Assert.assertEquals(excelp.getStringdata("Purchase", 1, 2), itemName1,"Selected Item " + itemName1 + " Expected " + excelp.getStringdata("Purchase", 1, 2));
-		Assert.assertEquals(excelp.getCurrencyData("Purchase", 1, 3), itemPrice1,"Selected Item price" + itemPrice1 + " Expected" + excelp.getCurrencyData("Purchase", 1, 3));
-		Assert.assertEquals(excelp.getStringdata("Purchase", 2, 2), itemName2,"Selected Item " + itemName2 + " Expected " + excelp.getStringdata("Purchase", 2, 2));
-		Assert.assertEquals(excelp.getCurrencyData("Purchase", 2, 3), itemPrice2,"Selected Item price" + itemPrice2 + " Expected" + excelp.getCurrencyData("Purchase", 2, 3));
-		Assert.assertEquals(excelp.getStringdata("Purchase", 3, 2), itemName3,"Selected Item " + itemName3 + " Expected " + excelp.getStringdata("Purchase", 3, 2));
-		Assert.assertEquals(excelp.getCurrencyData("Purchase", 3, 3), itemPrice3,"Selected Item price" + itemPrice3 + " Expected" + excelp.getCurrencyData("Purchase", 3, 3));
-		 System.out.println("bbbb111");
-		Assert.assertEquals(excelp.getStringdata("Purchase", 4, 2), itemName4,"Selected Item " + itemName4 + " Expected " + excelp.getStringdata("Purchase", 4, 2));
-		Assert.assertEquals(excelp.getCurrencyData("Purchase", 4, 3), itemPrice4,"Selected Item price" + itemPrice4 + " Expected" + excelp.getCurrencyData("Purchase", 4, 3));
-	
+	    
+	    
+	    String Expectedname1=excelp.getStringdata("Purchase", 1, 2);
+	    String Expectedprice1=excelp.getCurrencyData("Purchase", 1, 3);
+	    String Expectedname2=excelp.getStringdata("Purchase", 2, 2);
+	    String Expectedprice2=excelp.getCurrencyData("Purchase", 2, 3);
+	    String Expectedname3=excelp.getStringdata("Purchase", 3, 2);
+	    String Expectedprice3=excelp.getCurrencyData("Purchase", 3, 3);
+	    String Expectedname4=excelp.getStringdata("Purchase", 4, 2);
+	    String Expectedprice4=excelp.getCurrencyData("Purchase", 4, 3);
+	    
+		Assert.assertEquals(Expectedname1,itemName1,"Selected Item " + itemName1 + " Expected " + Expectedname1);
+		Assert.assertEquals(Expectedprice1,itemPrice1,"Selected Item price " + itemPrice1 + " Expected " + Expectedprice1);
+		Assert.assertEquals(Expectedname2,itemName2,"Selected Item " + itemName2 + " Expected " + Expectedname2);
+		Assert.assertEquals(Expectedprice2,itemPrice2,"Selected Item price " + itemPrice2 + " Expected " + Expectedprice2);
+		Assert.assertEquals(Expectedname3,itemName3,"Selected Item " + itemName3 + " Expected " + Expectedname3);
+		Assert.assertEquals(Expectedprice3,itemPrice3,"Selected Item price " + itemPrice3 + " Expected " + Expectedprice3);
+		Assert.assertEquals(Expectedname4,itemName4,"Selected Item " + itemName4 + " Expected " + Expectedname4);
+		Assert.assertEquals(Expectedprice4,itemPrice4,"Selected Item price " + itemPrice4 + " Expected " + Expectedprice4);
+	    
 
 		purchase.clickShopCart();
 	 
@@ -267,20 +290,18 @@ public class ItemPurchaseTest extends BaseClass {
 		 logger.info("ShopCart Item Price: " + shopcartitemPrice4);
 
 		 
-		 Assert.assertEquals(shopcartitemName1, itemName1);
-		 Assert.assertEquals(shopcartitemPrice1, itemPrice1);
-		 Assert.assertEquals(shopcartitemName2, itemName2);
-		 Assert.assertEquals(shopcartitemPrice2, itemPrice2);	
-		 Assert.assertEquals(shopcartitemName3, itemName3);
-		 Assert.assertEquals(shopcartitemPrice3, itemPrice3);	
-		 Assert.assertEquals(shopcartitemName4, itemName4);
-		 Assert.assertEquals(shopcartitemPrice4, itemPrice4);	
-		 
-     
-		 
+		 Assert.assertEquals(Expectedname1,shopcartitemName1,"Shopping Cart display Item " + shopcartitemName1 + " Expected " + Expectedname1);
+		 Assert.assertEquals(Expectedprice1,shopcartitemPrice1,"Shopping Cart display Item " + shopcartitemPrice1 + " Expected " + Expectedprice1);
+		 Assert.assertEquals(Expectedname2,shopcartitemName2,"Shopping Cart display Item " + shopcartitemName2 + " Expected " + Expectedname2);
+		 Assert.assertEquals(Expectedprice2,shopcartitemPrice2,"Shopping Cart display Item " + shopcartitemPrice2 + " Expected " + Expectedprice2);
+		 Assert.assertEquals(Expectedname3,shopcartitemName3,"Shopping Cart display Item " + shopcartitemName3 + " Expected " + Expectedname3);
+		 Assert.assertEquals(Expectedprice3,shopcartitemPrice3,"Shopping Cart display Item " + shopcartitemPrice3 + " Expected " + Expectedprice3);
+		 Assert.assertEquals(Expectedname4,shopcartitemName4,"Shopping Cart display Item " + shopcartitemName4 + " Expected " + Expectedname4);
+		 Assert.assertEquals(Expectedprice4,shopcartitemPrice4,"Shopping Cart display Item " + shopcartitemPrice4 + " Expected " + Expectedprice4);
+	 
+		 driver.navigate().back();
 	}
-	
-	
+
 	
 	
 	
