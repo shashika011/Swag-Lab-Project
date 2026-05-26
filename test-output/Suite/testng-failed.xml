@@ -7,41 +7,35 @@
   <test thread-count="5" name="Testchrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.swaglabtest.testcases.ItemPurchaseTest">
+      <class name="com.swaglabtest.testcases.NewPurchaseTest">
         <methods>
-          <include name="SigelItemPurchase"/>
+          <include name="newPurchasing"/>
           <include name="startTest"/>
           <include name="teardownSuite"/>
-          <include name="threeItemPurchase"/>
           <include name="setupSuite"/>
           <include name="teardownClass"/>
           <include name="PageIninitialize"/>
-          <include name="multipleItemPurchase"/>
           <include name="tearDownMethod"/>
-          <include name="FourItemPurchase"/>
           <include name="setupClass"/>
         </methods>
-      </class> <!-- com.swaglabtest.testcases.ItemPurchaseTest -->
+      </class> <!-- com.swaglabtest.testcases.NewPurchaseTest -->
     </classes>
   </test> <!-- Testchrome(failed) -->
   <test thread-count="5" name="Testfirefox(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.swaglabtest.testcases.ItemPurchaseTest">
+      <class name="com.swaglabtest.testcases.NewPurchaseTest">
         <methods>
-          <include name="SigelItemPurchase"/>
+          <include name="newPurchasing"/>
           <include name="startTest"/>
           <include name="teardownSuite"/>
-          <include name="threeItemPurchase"/>
           <include name="setupSuite"/>
           <include name="teardownClass"/>
           <include name="PageIninitialize"/>
-          <include name="multipleItemPurchase"/>
-          <include name="FourItemPurchase"/>
           <include name="setupClass"/>
           <include name="tearDownMethod"/>
         </methods>
-      </class> <!-- com.swaglabtest.testcases.ItemPurchaseTest -->
+      </class> <!-- com.swaglabtest.testcases.NewPurchaseTest -->
     </classes>
   </test> <!-- Testfirefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->
