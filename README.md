@@ -24,8 +24,6 @@ The project automates functional test scenarios for the **Swag Labs** web applic
 
 ## 🏗️ Project Structure
 
-## 🏗️ Project Structure
-
 ```text
 Swag-Lab-Project/
 │
@@ -77,28 +75,6 @@ Swag-Lab-Project/
 ├── LICENSE
 └── README.md
 ```
-
-### 📂 Folder Description
-
-| Folder / File              | Description                                  |
-| -------------------------- | -------------------------------------------- |
-| `.github/workflows`        | GitHub Actions CI/CD configuration           |
-| `src/test/java/pages`      | Page Object classes and web page locators    |
-| `src/test/java/pages/base` | Common test setup and teardown               |
-| `src/test/java/utilities`  | Reusable utility/helper classes              |
-| `src/test/java/tests`      | TestNG test classes                          |
-| `src/test/resources`       | Configuration and test data                  |
-| `Drivers`                  | Browser driver files, if required            |
-| `Reports`                  | Generated test reports                       |
-| `Screenshots`              | Test execution screenshots                   |
-| `TestData`                 | Test data files                              |
-| `XMLFiles`                 | TestNG suite configuration files             |
-| `logs`                     | Test execution logs                          |
-| `target`                   | Maven build and test output                  |
-| `test-output`              | TestNG generated output                      |
-| `pom.xml`                  | Maven dependencies and project configuration |
-| `.gitignore`               | Files excluded from Git                      |
-| `README.md`                | Project documentation                        |
 
 ### 📂 Folder Description
 
